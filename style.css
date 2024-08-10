@@ -60,3 +60,86 @@
     display: none;
     padding: 2px;
 }
+
+.open-karaoke {
+    text-align: center;
+}
+
+.open-karaoke button {
+    background: blueviolet;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.karaoke {
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(137, 43, 226);
+    transition: translate 0.4s ease;
+    translate: 0 100vh;
+}
+
+.karaoke.show {
+    translate: 0 0;
+}
+
+.karaoke .karaoke-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.karaoke .karaoke-header h2 {
+    font-size: 3rem;
+}
+
+.karaoke .karaoke-header .close {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.karaoke .karaoke-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    height: 80vh;
+}
+
+.karaoke .karaoke-inner p {
+    margin: 30px 0;
+}
+
+.karaoke .karaoke-inner .word {
+    position: relative;
+    margin: 0 10px;
+}
+.karaoke .karaoke-inner .word span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width linear;
+}
+
+.karaoke .player-karaoke {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
